@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "tutorialmod:block/deeplate_bluestone_ore"
+      "model": "tutorialmod:block/deepslate_bluestone_ore"
     }
   }
 }
