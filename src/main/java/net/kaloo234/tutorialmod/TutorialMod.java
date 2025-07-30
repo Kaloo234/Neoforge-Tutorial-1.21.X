@@ -1,5 +1,7 @@
 package net.kaloo234.tutorialmod;
 
+import net.kaloo234.tutorialmod.block.ModBlocks;
+import net.kaloo234.tutorialmod.item.ModCreativeModeTabs;
 import net.kaloo234.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.api.distmarker.Dist;
@@ -36,7 +38,10 @@ public class TutorialMod {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register((modEventBus));
+
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -54,6 +59,13 @@ public class TutorialMod {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.BLUESTONE);
             event.accept(ModItems.RAW_BLUESTONE);
+        }
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.BLUESTONE_BLOCK);
+        }
+        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.BLUESTONE_ORE);
+            event.accept(ModBlocks.DEEPSLATE_BLUESTONE_ORE);
         }
     }
 
