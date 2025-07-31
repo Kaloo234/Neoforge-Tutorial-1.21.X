@@ -3,6 +3,11 @@
   "item.tutorialmod.raw_bluestone": "Raw Bluestone",
   "item.tutorialmod.chisel": "Chisel",
 
+  "item.tutorialmod.radish": "Radish",
+
+  "item.tutorialmod.frostfire_ice": "Frostfire Ice",
+  "item.tutorialmod.starlight_ashes": "Starlight Ashes",
+
 
   "block.tutorialmod.bluestone_block": "Block of Bluestone",
   "block.tutorialmod.bluestone_ore": "Bluestone Ore",
@@ -22,5 +27,5 @@
 
 
   "creativetab.tutorialmod.bluestone_items": "Bluestone Items",
-  "creativetab.tutorialmod.bluestone_blocks": "Bluestone Blocks"
+  "creativetab.tutorialmod.bluestone_blocks": "Bluestone Blocks",
 }
