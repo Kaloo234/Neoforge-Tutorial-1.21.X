@@ -24,6 +24,7 @@ public class ModCreativeModeTabs {
                             .displayItems((parameters, output) -> {
                                 output.accept(ModItems.BLUESTONE);
                                 output.accept(ModItems.RAW_BLUESTONE);
+                                output.accept(ModItems.CHISEL);
                             }).build());
 
     public static final Supplier<CreativeModeTab> BLUESTONE_BLOCKS_TAB =
