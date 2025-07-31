@@ -3,9 +3,23 @@
   "item.tutorialmod.raw_bluestone": "Raw Bluestone",
   "item.tutorialmod.chisel": "Chisel",
 
+
   "block.tutorialmod.bluestone_block": "Block of Bluestone",
   "block.tutorialmod.bluestone_ore": "Bluestone Ore",
   "block.tutorialmod.deepslate_bluestone_ore": "Deepslate Bluestone Ore",
+
+  "block.tutorialmod.magic_block": "Magic Block",
+
+  "block.tutorialmod.bluestone_stairs": "Bluestone Stairs",
+  "block.tutorialmod.bluestone_slab": "Bluestone Slab",
+  "block.tutorialmod.bluestone_pressure_plate": "Bluestone Pressure Plate",
+  "block.tutorialmod.bluestone_button": "Bluestone Button",
+  "block.tutorialmod.bluestone_fence": "Bluestone Fence",
+  "block.tutorialmod.bluestone_fence_gate": "Bluestone Fence Gate",
+  "block.tutorialmod.bluestone_wall": "Bluestone Wall",
+  "block.tutorialmod.bluestone_door": "Bluestone Door",
+  "block.tutorialmod.bluestone_trapdoor": "Bluestone Trapdoor",
+
 
   "creativetab.tutorialmod.bluestone_items": "Bluestone Items",
   "creativetab.tutorialmod.bluestone_blocks": "Bluestone Blocks"

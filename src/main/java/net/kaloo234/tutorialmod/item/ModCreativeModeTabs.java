@@ -24,6 +24,7 @@ public class ModCreativeModeTabs {
                             .displayItems((parameters, output) -> {
                                 output.accept(ModItems.BLUESTONE);
                                 output.accept(ModItems.RAW_BLUESTONE);
+
                                 output.accept(ModItems.CHISEL);
                             }).build());
 
@@ -38,6 +39,18 @@ public class ModCreativeModeTabs {
                                 output.accept(ModBlocks.BLUESTONE_BLOCK);
                                 output.accept(ModBlocks.BLUESTONE_ORE);
                                 output.accept(ModBlocks.DEEPSLATE_BLUESTONE_ORE);
+
+                                output.accept(ModBlocks.MAGIC_BLOCK);
+
+                                output.accept(ModBlocks.BLUESTONE_STAIRS);
+                                output.accept(ModBlocks.BLUESTONE_SLAB);
+                                output.accept(ModBlocks.BLUESTONE_PRESSURE_PLATE);
+                                output.accept(ModBlocks.BLUESTONE_BUTTON);
+                                output.accept(ModBlocks.BLUESTONE_FENCE);
+                                output.accept(ModBlocks.BLUESTONE_FENCE_GATE);
+                                output.accept(ModBlocks.BLUESTONE_WALL);
+                                output.accept(ModBlocks.BLUESTONE_DOOR);
+                                output.accept(ModBlocks.BLUESTONE_TRAPDOOR);
                             }).build());
 
 
