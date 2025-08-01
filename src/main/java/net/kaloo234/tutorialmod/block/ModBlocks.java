@@ -50,7 +50,7 @@ public class ModBlocks {
 
     public static final DeferredBlock<FenceBlock> BLUESTONE_FENCE = registerBlock("bluestone_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
-    public static final DeferredBlock<FenceGateBlock> BLUESTONE_FENCE_GATE = registerBlock("bluestone_fence_block",
+    public static final DeferredBlock<FenceGateBlock> BLUESTONE_FENCE_GATE = registerBlock("bluestone_fence_gate",
             () -> new FenceGateBlock(WoodType.OAK,
                     BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<WallBlock> BLUESTONE_WALL = registerBlock("bluestone_wall",
