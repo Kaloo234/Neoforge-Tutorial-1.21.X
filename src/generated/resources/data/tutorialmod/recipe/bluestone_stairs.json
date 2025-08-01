@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "bluestone",
+  "key": {
+    "#": {
+      "item": "tutorialmod:bluestone"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "tutorialmod:bluestone_stairs"
+  }
+}

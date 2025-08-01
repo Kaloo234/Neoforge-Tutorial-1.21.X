@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "tutorialmod:block/bluestone_block",
+    "side": "tutorialmod:block/bluestone_block",
+    "top": "tutorialmod:block/bluestone_block"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "BLUESTONE",
+  "ingredients": [
+    {
+      "item": "tutorialmod:bluestone"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tutorialmod:bluestone_button"
+  }
+}

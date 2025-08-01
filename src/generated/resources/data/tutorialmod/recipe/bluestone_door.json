@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "BLUESTONE",
+  "key": {
+    "#": {
+      "item": "tutorialmod:bluestone"
+    }
+  },
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 3,
+    "id": "tutorialmod:bluestone_door"
+  }
+}

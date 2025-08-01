@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "tutorialmod:block/bluestone_slab"
+    },
+    "type=double": {
+      "model": "tutorialmod:block/bluestone_block"
+    },
+    "type=top": {
+      "model": "tutorialmod:block/bluestone_slab_top"
+    }
+  }
+}
