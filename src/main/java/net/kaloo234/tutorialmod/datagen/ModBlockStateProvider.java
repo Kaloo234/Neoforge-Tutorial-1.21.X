@@ -2,8 +2,11 @@ package net.kaloo234.tutorialmod.datagen;
 
 import net.kaloo234.tutorialmod.TutorialMod;
 import net.kaloo234.tutorialmod.block.ModBlocks;
+import net.kaloo234.tutorialmod.block.custom.BluestoneLampBlock;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
+import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -43,6 +46,23 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.BLUESTONE_PRESSURE_PLATE);
         blockItem(ModBlocks.BLUESTONE_FENCE_GATE);
         blockItem(ModBlocks.BLUESTONE_TRAPDOOR, "_bottom");
+
+        customLamp();
+    }
+
+    private void customLamp() {
+        getVariantBuilder(ModBlocks.BLUESTONE_LAMP.get()).forAllStates(state -> {
+            if(state.getValue(BluestoneLampBlock.CLICKED)) {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("bluestone_lamp_on",
+                        ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, "block/" + "bluestone_lamp_on")))};
+            } else {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("bluestone_lamp_off",
+                        ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, "block/" + "bluestone_lamp_off")))};
+            }
+        });
+
+        simpleBlockItem(ModBlocks.BLUESTONE_LAMP.get(), models().cubeAll("bluestone_lamp_on",
+                ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, "block/" + "bluestone_lamp_on")));
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {

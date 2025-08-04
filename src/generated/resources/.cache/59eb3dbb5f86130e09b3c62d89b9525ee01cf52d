@@ -1,9 +1,10 @@
-// 1.21.1	2025-07-31T21:12:19.008752239	Loot Tables
+// 1.21.1	2025-08-01T19:54:03.367415259	Loot Tables
 387cdfa71b6750acfeb2caae84cee64efd033265 data/tutorialmod/loot_table/blocks/bluestone_block.json
 c10532eb761eacc8b81ac4055975f66dbdccf4cc data/tutorialmod/loot_table/blocks/bluestone_button.json
 a0479e75412bd59167fc9f8e325a54548b2b4e0b data/tutorialmod/loot_table/blocks/bluestone_door.json
 afe4b76419b2fb6e2459d6926c19c0491a745ebf data/tutorialmod/loot_table/blocks/bluestone_fence.json
 8148bec165931417085fea2205df154fb806e150 data/tutorialmod/loot_table/blocks/bluestone_fence_gate.json
+7ed4f8be3f67346d4eea935accba23de61540c9f data/tutorialmod/loot_table/blocks/bluestone_lamp.json
 09b17ade1e7852c136f30f68623bf96c04adb8e5 data/tutorialmod/loot_table/blocks/bluestone_ore.json
 668a417776a83b0896baa373566cabfb636100f0 data/tutorialmod/loot_table/blocks/bluestone_pressure_plate.json
 6e368de47127a0ce248dac2b2d9df68f718ece6e data/tutorialmod/loot_table/blocks/bluestone_slab.json

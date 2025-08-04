@@ -1,6 +1,7 @@
 package net.kaloo234.tutorialmod.block;
 
 import net.kaloo234.tutorialmod.TutorialMod;
+import net.kaloo234.tutorialmod.block.custom.BluestoneLampBlock;
 import net.kaloo234.tutorialmod.block.custom.MagicBlock;
 import net.kaloo234.tutorialmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -62,6 +63,10 @@ public class ModBlocks {
     public static final DeferredBlock<TrapDoorBlock> BLUESTONE_TRAPDOOR = registerBlock("bluestone_trapdoor",
             () -> new TrapDoorBlock(BlockSetType.IRON,
                     BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noCollission()));
+
+    public static final DeferredBlock<Block> BLUESTONE_LAMP = registerBlock("bluestone_lamp",
+            () -> new BluestoneLampBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()
+                    .lightLevel(state -> state.getValue(BluestoneLampBlock.CLICKED) ? 15 : 0)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

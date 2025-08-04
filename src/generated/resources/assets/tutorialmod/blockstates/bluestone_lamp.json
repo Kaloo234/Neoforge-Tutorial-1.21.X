@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "tutorialmod:block/bluestone_lamp_off"
+    },
+    "clicked=true": {
+      "model": "tutorialmod:block/bluestone_lamp_on"
+    }
+  }
+}

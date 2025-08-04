@@ -56,6 +56,8 @@ public class ModCreativeModeTabs {
                                 output.accept(ModBlocks.BLUESTONE_WALL);
                                 output.accept(ModBlocks.BLUESTONE_DOOR);
                                 output.accept(ModBlocks.BLUESTONE_TRAPDOOR);
+
+                                output.accept(ModBlocks.BLUESTONE_LAMP);
                             }).build());
 
 
