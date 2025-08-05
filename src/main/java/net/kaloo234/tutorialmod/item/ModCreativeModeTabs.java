@@ -31,6 +31,12 @@ public class ModCreativeModeTabs {
 
                                 output.accept(ModItems.FROSTFIRE_ICE);
                                 output.accept(ModItems.STARLIGHT_ASHES);
+
+                                output.accept(ModItems.BLUESTONE_SWORD);
+                                output.accept(ModItems.BLUESTONE_PICKAXE);
+                                output.accept(ModItems.BLUESTONE_SHOVEL);
+                                output.accept(ModItems.BLUESTONE_AXE);
+                                output.accept(ModItems.BLUESTONE_HOE);
                             }).build());
 
     public static final Supplier<CreativeModeTab> BLUESTONE_BLOCKS_TAB =

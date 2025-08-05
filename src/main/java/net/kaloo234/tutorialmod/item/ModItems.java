@@ -4,9 +4,7 @@ import net.kaloo234.tutorialmod.TutorialMod;
 import net.kaloo234.tutorialmod.item.custom.ChiselItem;
 import net.kaloo234.tutorialmod.item.custom.FuelItem;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -37,6 +35,22 @@ public class ModItems {
             () -> new FuelItem(new Item.Properties(), 800));
     public  static final DeferredItem<Item> STARLIGHT_ASHES = ITEMS.register("starlight_ashes",
             () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<SwordItem> BLUESTONE_SWORD = ITEMS.register("bluestone_sword",
+            () -> new SwordItem(ModToolTiers.BLUESTONE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.BLUESTONE, 5.0f, -2.4f))));
+    public static final DeferredItem<PickaxeItem> BLUESTONE_PICKAXE = ITEMS.register("bluestone_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.BLUESTONE, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.BLUESTONE, 1.4f, -2.8f))));
+    public static final DeferredItem<ShovelItem> BLUESTONE_SHOVEL = ITEMS.register("bluestone_shovel",
+            () -> new ShovelItem(ModToolTiers.BLUESTONE, new Item.Properties()
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.BLUESTONE, 1.5f, -3.0f))));
+    public static final DeferredItem<AxeItem> BLUESTONE_AXE = ITEMS.register("bluestone_axe",
+            () -> new AxeItem(ModToolTiers.BLUESTONE, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(ModToolTiers.BLUESTONE, 6.0f, -3.2f))));
+    public static final DeferredItem<HoeItem> BLUESTONE_HOE = ITEMS.register("bluestone_hoe",
+            () -> new HoeItem(ModToolTiers.BLUESTONE, new Item.Properties()
+                    .attributes(HoeItem.createAttributes(ModToolTiers.BLUESTONE, 0.0f, -3.0f))));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

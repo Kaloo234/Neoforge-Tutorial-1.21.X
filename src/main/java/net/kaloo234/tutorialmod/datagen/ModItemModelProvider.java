@@ -6,6 +6,7 @@ import net.kaloo234.tutorialmod.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
+import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -29,6 +30,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         wallItem(ModBlocks.BLUESTONE_WALL, ModBlocks.BLUESTONE_BLOCK);
 
         basicItem(ModBlocks.BLUESTONE_DOOR.asItem());
+
+        handheldItem(ModItems.BLUESTONE_SWORD.get());
+        handheldItem(ModItems.BLUESTONE_PICKAXE.get());
+        handheldItem(ModItems.BLUESTONE_SHOVEL.get());
+        handheldItem(ModItems.BLUESTONE_AXE.get());
+        handheldItem(ModItems.BLUESTONE_HOE.get());
     }
 
     public void buttonItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {
