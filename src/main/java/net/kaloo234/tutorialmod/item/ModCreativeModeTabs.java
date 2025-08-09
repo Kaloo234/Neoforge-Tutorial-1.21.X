@@ -37,6 +37,8 @@ public class ModCreativeModeTabs {
                                 output.accept(ModItems.BLUESTONE_SHOVEL);
                                 output.accept(ModItems.BLUESTONE_AXE);
                                 output.accept(ModItems.BLUESTONE_HOE);
+
+                                output.accept(ModItems.BLUESTONE_HAMMER);
                             }).build());
 
     public static final Supplier<CreativeModeTab> BLUESTONE_BLOCKS_TAB =

@@ -3,6 +3,7 @@ package net.kaloo234.tutorialmod;
 import net.kaloo234.tutorialmod.block.ModBlocks;
 import net.kaloo234.tutorialmod.component.ModDataComponent;
 import net.kaloo234.tutorialmod.datagen.DataGenerators;
+import net.kaloo234.tutorialmod.event.ModEvents;
 import net.kaloo234.tutorialmod.item.ModCreativeModeTabs;
 import net.kaloo234.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;

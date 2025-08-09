@@ -6,8 +6,10 @@ import net.kaloo234.tutorialmod.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 
 import java.util.List;
@@ -23,21 +25,25 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         List<ItemLike> BLUESTONE_SMELTABLES = List.of(ModItems.RAW_BLUESTONE.get(),
                 ModBlocks.BLUESTONE_ORE.get(), ModBlocks.DEEPSLATE_BLUESTONE_ORE.get());
 
+//############################
+//          SMELTING
+//############################
+
+        oreSmelting(recipeOutput, BLUESTONE_SMELTABLES, RecipeCategory.MISC, ModItems.BLUESTONE.get(),
+                0.25f, 200, "bluestone");
+        oreBlasting(recipeOutput, BLUESTONE_SMELTABLES, RecipeCategory.MISC, ModItems.BLUESTONE.get(),
+                0.25f, 100, "bluestone");
+
+//############################
+//          BLOCKS
+//############################
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.BLUESTONE_BLOCK.get())
                 .pattern("BBB")
                 .pattern("BBB")
                 .pattern("BBB")
                 .define('B', ModItems.BLUESTONE.get())
                 .unlockedBy("has_bluestone", has(ModItems.BLUESTONE)).save(recipeOutput);
-
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BLUESTONE.get(), 9)
-                .requires(ModBlocks.BLUESTONE_BLOCK.get())
-                .unlockedBy("has_bluestone_block", has(ModBlocks.BLUESTONE_BLOCK)).save(recipeOutput);
-
-        oreSmelting(recipeOutput, BLUESTONE_SMELTABLES, RecipeCategory.MISC, ModItems.BLUESTONE.get(),
-                0.25f, 200, "bluestone");
-        oreBlasting(recipeOutput, BLUESTONE_SMELTABLES, RecipeCategory.MISC, ModItems.BLUESTONE.get(),
-                0.25f, 100, "bluestone");
 
         stairBuilder(ModBlocks.BLUESTONE_STAIRS.get(), Ingredient.of(ModItems.BLUESTONE)).group("bluestone")
                 .unlockedBy("has_bluestone", has(ModItems.BLUESTONE)).save(recipeOutput);
@@ -57,6 +63,90 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_BLUESTONE", has(ModItems.BLUESTONE.get())).save(recipeOutput);
         trapdoorBuilder(ModBlocks.BLUESTONE_TRAPDOOR.get(), Ingredient.of(ModItems.BLUESTONE.get())).group("BLUESTONE")
                 .unlockedBy("has_BLUESTONE", has(ModItems.BLUESTONE.get())).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.BLUESTONE_LAMP.get())
+                .pattern("BBB")
+                .pattern("BLB")
+                .pattern("BBB")
+                .define('B', ModItems.BLUESTONE.get())
+                .define('L', Blocks.REDSTONE_LAMP)
+                .unlockedBy("has_bluestone", has(ModItems.BLUESTONE)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.MAGIC_BLOCK.get())
+                .pattern("BBB")
+                .pattern("BCB")
+                .pattern("BBB")
+                .define('B', ModBlocks.BLUESTONE_BLOCK.get())
+                .define('C', ModItems.CHISEL.get())
+                .unlockedBy("has_bluestone", has(ModItems.BLUESTONE)).save(recipeOutput);
+
+//############################
+//          ITEMS
+//############################
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BLUESTONE.get(), 9)
+                .requires(ModBlocks.BLUESTONE_BLOCK.get())
+                .unlockedBy("has_bluestone_block", has(ModBlocks.BLUESTONE_BLOCK)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CHISEL.get())
+                .pattern("  B")
+                .pattern(" B ")
+                .pattern("S  ")
+                .define('B', ModItems.BLUESTONE.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_bluestone", has(ModItems.BLUESTONE)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BLUESTONE_SWORD.get())
+                .pattern("B")
+                .pattern("B")
+                .pattern("S")
+                .define('B', ModItems.BLUESTONE.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_bluestone", has(ModItems.BLUESTONE)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BLUESTONE_PICKAXE.get())
+                .pattern("BBB")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('B', ModItems.BLUESTONE.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_bluestone", has(ModItems.BLUESTONE)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BLUESTONE_SHOVEL.get())
+                .pattern("B")
+                .pattern("S")
+                .pattern("S")
+                .define('B', ModItems.BLUESTONE.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_bluestone", has(ModItems.BLUESTONE)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BLUESTONE_AXE.get())
+                .pattern("BB")
+                .pattern("SB")
+                .pattern("S ")
+                .define('B', ModItems.BLUESTONE.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_bluestone", has(ModItems.BLUESTONE)).save(recipeOutput);
+        /*ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BLUESTONE_AXE.get())
+                .pattern("BB")
+                .pattern("BS")
+                .pattern(" S")
+                .define('B', ModItems.BLUESTONE.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_bluestone", has(ModItems.BLUESTONE)).save(recipeOutput, "tutorialmod:bluestone_axe_mirror");
+        */
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BLUESTONE_HOE.get())
+                .pattern("BB")
+                .pattern("S ")
+                .pattern("S ")
+                .define('B', ModItems.BLUESTONE.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_bluestone", has(ModItems.BLUESTONE)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BLUESTONE_HAMMER.get())
+                .pattern("BBB")
+                .pattern("BBB")
+                .pattern(" S ")
+                .define('B', ModBlocks.BLUESTONE_BLOCK.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_bluestone", has(ModItems.BLUESTONE)).save(recipeOutput);
     }
 
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,

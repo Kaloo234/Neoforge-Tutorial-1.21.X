@@ -1,9 +1,10 @@
-// 1.21.1	2025-08-04T20:09:45.847319277	Item Models: tutorialmod
+// 1.21.1	2025-08-08T19:27:27.749362088	Item Models: tutorialmod
 b71c377ba5963fa937a5684265e1b1bb1a7e3172 assets/tutorialmod/models/item/bluestone.json
 39fcfbfa92e5c981dd8604afedb3beba960cc11f assets/tutorialmod/models/item/bluestone_axe.json
 3ebbf3e0370ce9f17c20003c574a2deb0849a2b8 assets/tutorialmod/models/item/bluestone_button.json
 fbafba4bf27859992c5dc2076d3e84bebbe2a20a assets/tutorialmod/models/item/bluestone_door.json
 61c127cccf5d37c17ac5c0eeff3297a0a2a7f8ea assets/tutorialmod/models/item/bluestone_fence.json
+ab2203f4665543b030a34052fc986046be24b266 assets/tutorialmod/models/item/bluestone_hammer.json
 f9c23f622bf695db137bb08e5608fc3b003abce3 assets/tutorialmod/models/item/bluestone_hoe.json
 d847ecb0f90de0e4f27dff709e9f19835928c99c assets/tutorialmod/models/item/bluestone_pickaxe.json
 153691d851498f1b8511a007a9329266d3cfb860 assets/tutorialmod/models/item/bluestone_shovel.json

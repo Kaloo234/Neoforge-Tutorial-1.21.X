@@ -3,6 +3,7 @@ package net.kaloo234.tutorialmod.item;
 import net.kaloo234.tutorialmod.TutorialMod;
 import net.kaloo234.tutorialmod.item.custom.ChiselItem;
 import net.kaloo234.tutorialmod.item.custom.FuelItem;
+import net.kaloo234.tutorialmod.item.custom.HammerItem;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
@@ -51,6 +52,10 @@ public class ModItems {
     public static final DeferredItem<HoeItem> BLUESTONE_HOE = ITEMS.register("bluestone_hoe",
             () -> new HoeItem(ModToolTiers.BLUESTONE, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTiers.BLUESTONE, 0.0f, -3.0f))));
+
+    public static final DeferredItem<HammerItem> BLUESTONE_HAMMER = ITEMS.register("bluestone_hammer",
+            () -> new HammerItem(ModToolTiers.BLUESTONE, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.BLUESTONE, 7.0f, -3.5f))));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
