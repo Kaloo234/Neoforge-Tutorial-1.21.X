@@ -22,6 +22,10 @@
   "item.tutorialmod.bluestone_leggings": "Bluestone Leggings",
   "item.tutorialmod.bluestone_boots": "Bluestone Boots",
 
+  "item.tutorialmod.bluestone_horse_armor": "Bluestone Horse Armor",
+
+  "item.tutorialmod.kaloo234_armor_trim_smithing_template": "Kaloo234 Trim Template",
+
 
   "block.tutorialmod.bluestone_block": "Block of Bluestone",
   "block.tutorialmod.bluestone_ore": "Bluestone Ore",
@@ -51,5 +55,9 @@
   "tooltip.tutorialmod.chisel.shift_down": "This item can chisel blocks into bricks",
   "tooltip.tutorialmod.chisel": "Press §eShift§r for more information",
 
-  "tooltip.tutorialmod.radish.tooltip": "Tastes really great!"
+  "tooltip.tutorialmod.radish.tooltip": "Tastes really great!",
+
+
+  "trim_pattern.tutorialmod.kaloo234": "Kaloo234 Armor Trim",
+  "trim_material.tutorialmod.bluestone": "Bluestone Material"
 }

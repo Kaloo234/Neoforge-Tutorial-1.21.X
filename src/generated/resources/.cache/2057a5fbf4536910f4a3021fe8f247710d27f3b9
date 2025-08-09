@@ -1,4 +1,4 @@
-// 1.21.1	2025-08-08T22:23:01.594972228	Item Models: tutorialmod
+// 1.21.1	2025-08-09T10:52:15.937206707	Item Models: tutorialmod
 b71c377ba5963fa937a5684265e1b1bb1a7e3172 assets/tutorialmod/models/item/bluestone.json
 39fcfbfa92e5c981dd8604afedb3beba960cc11f assets/tutorialmod/models/item/bluestone_axe.json
 e8034c967cf496ebcbbc3df5cc2795687223d866 assets/tutorialmod/models/item/bluestone_boots.json
@@ -40,6 +40,7 @@ ad1e32100f8e9752004e067af65f6f04f0cd05d7 assets/tutorialmod/models/item/blueston
 8961a68cf7f7bbdafca83f9c7cd0ff704a1baf28 assets/tutorialmod/models/item/bluestone_helmet_quartz_trim.json
 fa21b1e077429a61eb86740a2b5dd14c85695d2f assets/tutorialmod/models/item/bluestone_helmet_redstone_trim.json
 f9c23f622bf695db137bb08e5608fc3b003abce3 assets/tutorialmod/models/item/bluestone_hoe.json
+cb955227a0131390886662a1a3d8b8ec8f500bbb assets/tutorialmod/models/item/bluestone_horse_armor.json
 a5faa10b6133f84668909b07f19af25aef832921 assets/tutorialmod/models/item/bluestone_leggings.json
 72b871c4161fe728bb18157e867e724100bbb80d assets/tutorialmod/models/item/bluestone_leggings_amethyst_trim.json
 f4dcdc7fcf0effc43881cb9d452fadfbc90694f9 assets/tutorialmod/models/item/bluestone_leggings_copper_trim.json
@@ -55,8 +56,8 @@ d847ecb0f90de0e4f27dff709e9f19835928c99c assets/tutorialmod/models/item/blueston
 153691d851498f1b8511a007a9329266d3cfb860 assets/tutorialmod/models/item/bluestone_shovel.json
 5c1194e170c54aecba01c7edd322a28717a41423 assets/tutorialmod/models/item/bluestone_sword.json
 c5577af5c7144484e14fbe41831c29f310dc7665 assets/tutorialmod/models/item/bluestone_wall.json
-69a45d9eda7fcbbb46f3a4bf568243a7b2141123 assets/tutorialmod/models/item/chisel.json
 91ec90598690688b7129cd5976415ae5158e72d3 assets/tutorialmod/models/item/frostfire_ice.json
+4af225c495e9b12b3fa44313d73386bd65ddfd20 assets/tutorialmod/models/item/kaloo234_armor_trim_smithing_template.json
 f4c84ba8717deb3f252eef0b2e0833f60e735029 assets/tutorialmod/models/item/radish.json
 b8e5df6d19e437db55142ce54a620905277d331e assets/tutorialmod/models/item/raw_bluestone.json
 fa9080666ba4e3910d0814ec35a3e300f861fb1c assets/tutorialmod/models/item/starlight_ashes.json

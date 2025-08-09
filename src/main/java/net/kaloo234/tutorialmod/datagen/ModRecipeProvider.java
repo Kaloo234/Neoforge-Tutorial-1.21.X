@@ -6,6 +6,7 @@ import net.kaloo234.tutorialmod.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
@@ -146,6 +147,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('B', ModBlocks.BLUESTONE_BLOCK.get())
                 .define('S', Items.STICK)
                 .unlockedBy("has_bluestone", has(ModItems.BLUESTONE)).save(recipeOutput);
+
+//############################
+//          TRIMS
+//############################
+
+        trimSmithing(recipeOutput, ModItems.KALOO234_SMITHING_TEMPLATE.get(),
+                ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, "kaloo234"));
     }
 
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,

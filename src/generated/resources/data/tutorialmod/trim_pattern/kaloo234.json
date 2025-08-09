@@ -1,0 +1,8 @@
+{
+  "asset_id": "tutorialmod:kaloo234",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.tutorialmod.kaloo234"
+  },
+  "template_item": "tutorialmod:kaloo234_armor_trim_smithing_template"
+}

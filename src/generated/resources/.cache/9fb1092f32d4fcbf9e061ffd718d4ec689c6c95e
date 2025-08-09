@@ -1,4 +1,4 @@
-// 1.21.1	2025-08-08T21:02:01.190995151	Recipes
+// 1.21.1	2025-08-09T10:33:43.372087146	Recipes
 ae8b8838182f938ed9759b7f3b5cdd87dd22bbea data/tutorialmod/advancement/recipes/building_blocks/bluestone_slab.json
 96ad0926991cb7417a3c36fda7af979d57f522c5 data/tutorialmod/advancement/recipes/building_blocks/bluestone_stairs.json
 5026332782bc1ea021c093103690e10ed728538a data/tutorialmod/advancement/recipes/building_blocks/bluestone_wall.json
@@ -20,6 +20,7 @@ d2a6f2a798b36cd5d7c1bac9858f06fa95ec6416 data/tutorialmod/advancement/recipes/mi
 55b376619da4f99a735498c9bb7f7dbb4cf7822f data/tutorialmod/advancement/recipes/misc/bluestone_shovel.json
 6e5371b3ed419932fa2a3bcceb1f35e61a19daa6 data/tutorialmod/advancement/recipes/misc/bluestone_sword.json
 b3379795aaae6330515ef973f043075f8473a2e7 data/tutorialmod/advancement/recipes/misc/chisel.json
+0de504fb360163fd5d890b5ec74945f26e5836d5 data/tutorialmod/advancement/recipes/misc/kaloo234.json
 d7890f9ce414aa2098efddc9fc1e2100f427c8b9 data/tutorialmod/advancement/recipes/misc/magic_block.json
 1e1748997fdf88847738dcafb048cfd46c343c6b data/tutorialmod/advancement/recipes/redstone/bluestone_button.json
 af28adeb8a24159cbc4446cf5baa23032a5c9121 data/tutorialmod/advancement/recipes/redstone/bluestone_door.json
@@ -52,4 +53,5 @@ cf0777f3071aed1bb30b166e2ec62e05c9ca46a8 data/tutorialmod/recipe/bluestone_shove
 e30c7e62ed29bd1abb97f87fe832a356292dbba9 data/tutorialmod/recipe/bluestone_trapdoor.json
 080d2d9fa1cb9cd5d41f471da7bba260014eddd2 data/tutorialmod/recipe/bluestone_wall.json
 9657d43c0eae7034c0de98d7aa39897569afc6a8 data/tutorialmod/recipe/chisel.json
+2c7a83df531fe8af445c310af1275aa32667ac67 data/tutorialmod/recipe/kaloo234.json
 b8427860d9380d466378f7d01336a15d51267244 data/tutorialmod/recipe/magic_block.json

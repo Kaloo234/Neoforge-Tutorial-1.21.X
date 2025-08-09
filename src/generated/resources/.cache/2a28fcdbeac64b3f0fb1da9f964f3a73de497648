@@ -1,8 +1,10 @@
-// 1.21.1	2025-08-08T22:23:01.592868374	Tags for minecraft:item mod id tutorialmod
+// 1.21.1	2025-08-09T10:33:43.383457763	Tags for minecraft:item mod id tutorialmod
 dbc36a325576b5a20944a98470367b2cf89e47eb data/minecraft/tags/item/axes.json
 43258cbdd658fc63e1a1c788065e32484f033a2a data/minecraft/tags/item/hoes.json
 84fe3688fd3b6b32b28c7b8b8d31ecf043c02d50 data/minecraft/tags/item/pickaxes.json
 71fddd4a99bb5b9b6bedf485792859656a25469c data/minecraft/tags/item/shovels.json
 1ef0acc2f2fb3503373b4d97242b17623aa85e80 data/minecraft/tags/item/swords.json
+ad7f72eb5b0a7a5762e7213d95468110324f645c data/minecraft/tags/item/trim_materials.json
+b18909c90cd1a5b2977c06fe20dd732e7e9d7761 data/minecraft/tags/item/trim_templates.json
 a44b7a4c1447da5359a228bf05ecdadf1aa19612 data/minecraft/tags/item/trimmable_armor.json
 0230502d14afc5b88db1aa1ff3fdb0a151db9e35 data/tutorialmod/tags/item/transformable_items.json

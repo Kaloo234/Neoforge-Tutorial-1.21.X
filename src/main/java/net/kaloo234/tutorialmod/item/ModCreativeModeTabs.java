@@ -45,6 +45,10 @@ public class ModCreativeModeTabs {
                                 output.accept(ModItems.BLUESTONE_CHEStPLATE);
                                 output.accept(ModItems.BLUESTONE_LEGGINGS);
                                 output.accept(ModItems.BLUESTONE_BOOTS);
+
+                                output.accept(ModItems.BLUESTONE_HORSE_ARMOR);
+
+                                output.accept(ModItems.KALOO234_SMITHING_TEMPLATE);
                             }).build());
 
     public static final Supplier<CreativeModeTab> BLUESTONE_BLOCKS_TAB =

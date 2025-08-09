@@ -45,7 +45,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.RADISH.get());
         basicItem(ModItems.STARLIGHT_ASHES.get());
         basicItem(ModItems.FROSTFIRE_ICE.get());
-        basicItem(ModItems.CHISEL.get());
+        //basicItem(ModItems.CHISEL.get());
 
         buttonItem(ModBlocks.BLUESTONE_BUTTON, ModBlocks.BLUESTONE_BLOCK);
         fenceItem(ModBlocks.BLUESTONE_FENCE, ModBlocks.BLUESTONE_BLOCK);
@@ -66,6 +66,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.BLUESTONE_CHEStPLATE);
         trimmedArmorItem(ModItems.BLUESTONE_LEGGINGS);
         trimmedArmorItem(ModItems.BLUESTONE_BOOTS);
+
+        basicItem(ModItems.BLUESTONE_HORSE_ARMOR.get());
+
+        basicItem(ModItems.KALOO234_SMITHING_TEMPLATE.get());
     }
 
     private void trimmedArmorItem(DeferredItem<ArmorItem> itemDeferredItem) {
