@@ -3,6 +3,7 @@ package net.kaloo234.tutorialmod;
 import net.kaloo234.tutorialmod.block.ModBlocks;
 import net.kaloo234.tutorialmod.component.ModDataComponent;
 import net.kaloo234.tutorialmod.datagen.DataGenerators;
+import net.kaloo234.tutorialmod.event.ModClientEvents;
 import net.kaloo234.tutorialmod.item.ModCreativeModeTabs;
 import net.kaloo234.tutorialmod.item.ModItems;
 import net.kaloo234.tutorialmod.util.ModItemsProperties;
@@ -37,7 +38,6 @@ public class TutorialMod {
         if (FMLEnvironment.dist.isClient()) {
             modEventBus.addListener(ClientModEvents::onClientSetup);
         }
-
 
         NeoForge.EVENT_BUS.register(this);
 

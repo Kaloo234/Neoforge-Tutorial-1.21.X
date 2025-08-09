@@ -1,0 +1,6 @@
+{
+  "parent": "tutorialmod:item/bluestone_bow",
+  "textures": {
+    "layer0": "tutorialmod:item/bluestone_bow_pulling_1"
+  }
+}
