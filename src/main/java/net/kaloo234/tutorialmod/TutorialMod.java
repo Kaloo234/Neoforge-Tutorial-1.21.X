@@ -5,6 +5,7 @@ import net.kaloo234.tutorialmod.component.ModDataComponent;
 import net.kaloo234.tutorialmod.datagen.DataGenerators;
 import net.kaloo234.tutorialmod.item.ModCreativeModeTabs;
 import net.kaloo234.tutorialmod.item.ModItems;
+import net.kaloo234.tutorialmod.util.ModItemsProperties;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.loading.FMLEnvironment;
@@ -75,7 +76,7 @@ public class TutorialMod {
 
     public static class ClientModEvents {
         public static void onClientSetup(FMLClientSetupEvent event) {
-
+            ModItemsProperties.addCustomItemProperties();
         }
     }
 }
