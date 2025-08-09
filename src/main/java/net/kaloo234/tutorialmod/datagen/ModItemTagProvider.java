@@ -38,5 +38,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.BLUESTONE_AXE.get());
         tag(ItemTags.HOES)
                 .add(ModItems.BLUESTONE_HOE.get());
+
+        this.tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.BLUESTONE_HELMET.get())
+                .add(ModItems.BLUESTONE_CHEStPLATE.get())
+                .add(ModItems.BLUESTONE_LEGGINGS.get())
+                .add(ModItems.BLUESTONE_BOOTS.get());
     }
 }

@@ -2,6 +2,7 @@ package net.kaloo234.tutorialmod.item;
 
 import net.kaloo234.tutorialmod.TutorialMod;
 import net.kaloo234.tutorialmod.item.custom.ChiselItem;
+import net.kaloo234.tutorialmod.item.custom.ExcavatorItem;
 import net.kaloo234.tutorialmod.item.custom.FuelItem;
 import net.kaloo234.tutorialmod.item.custom.HammerItem;
 import net.minecraft.network.chat.Component;
@@ -56,6 +57,25 @@ public class ModItems {
     public static final DeferredItem<HammerItem> BLUESTONE_HAMMER = ITEMS.register("bluestone_hammer",
             () -> new HammerItem(ModToolTiers.BLUESTONE, new Item.Properties()
                     .attributes(PickaxeItem.createAttributes(ModToolTiers.BLUESTONE, 7.0f, -3.5f))));
+    public static final DeferredItem<ExcavatorItem> BLUESTONE_EXCAVATOR = ITEMS.register("bluestone_excavator",
+            () -> new ExcavatorItem(ModToolTiers.BLUESTONE, new Item.Properties()
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.BLUESTONE, 7.0f, -3.5f))));
+
+    public static final DeferredItem<ArmorItem> BLUESTONE_HELMET = ITEMS.register("bluestone_helmet",
+            () -> new ArmorItem(ModArmorMaterials.BLUESTONE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(22))));
+public static final DeferredItem<ArmorItem> BLUESTONE_CHEStPLATE = ITEMS.register("bluestone_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.BLUESTONE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(22))));
+public static final DeferredItem<ArmorItem> BLUESTONE_LEGGINGS = ITEMS.register("bluestone_leggings",
+            () -> new ArmorItem(ModArmorMaterials.BLUESTONE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(22))));
+public static final DeferredItem<ArmorItem> BLUESTONE_BOOTS = ITEMS.register("bluestone_boots",
+            () -> new ArmorItem(ModArmorMaterials.BLUESTONE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(22))));
+/*public static final DeferredItem<ArmorItem> BLUESTONE_BODY = ITEMS.register("bluestone_body",
+            () -> new ArmorItem(ModArmorMaterials.BLUESTONE_ARMOR_MATERIAL, ArmorItem.Type.BODY,
+                    new Item.Properties().durability(ArmorItem.Type.BODY.getDurability(22))));*/
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

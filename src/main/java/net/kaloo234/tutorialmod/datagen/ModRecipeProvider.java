@@ -124,14 +124,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('B', ModItems.BLUESTONE.get())
                 .define('S', Items.STICK)
                 .unlockedBy("has_bluestone", has(ModItems.BLUESTONE)).save(recipeOutput);
-        /*ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BLUESTONE_AXE.get())
-                .pattern("BB")
-                .pattern("BS")
-                .pattern(" S")
-                .define('B', ModItems.BLUESTONE.get())
-                .define('S', Items.STICK)
-                .unlockedBy("has_bluestone", has(ModItems.BLUESTONE)).save(recipeOutput, "tutorialmod:bluestone_axe_mirror");
-        */
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BLUESTONE_HOE.get())
                 .pattern("BB")
                 .pattern("S ")
@@ -144,6 +136,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("BBB")
                 .pattern("BBB")
                 .pattern(" S ")
+                .define('B', ModBlocks.BLUESTONE_BLOCK.get())
+                .define('S', Items.STICK)
+                .unlockedBy("has_bluestone", has(ModItems.BLUESTONE)).save(recipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BLUESTONE_EXCAVATOR.get())
+                .pattern(" BB")
+                .pattern(" BB")
+                .pattern("S  ")
                 .define('B', ModBlocks.BLUESTONE_BLOCK.get())
                 .define('S', Items.STICK)
                 .unlockedBy("has_bluestone", has(ModItems.BLUESTONE)).save(recipeOutput);
