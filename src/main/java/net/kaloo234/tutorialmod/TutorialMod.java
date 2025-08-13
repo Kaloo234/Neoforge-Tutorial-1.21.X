@@ -6,6 +6,7 @@ import net.kaloo234.tutorialmod.datagen.DataGenerators;
 import net.kaloo234.tutorialmod.event.ModClientEvents;
 import net.kaloo234.tutorialmod.item.ModCreativeModeTabs;
 import net.kaloo234.tutorialmod.item.ModItems;
+import net.kaloo234.tutorialmod.sound.ModSounds;
 import net.kaloo234.tutorialmod.util.ModItemsProperties;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
@@ -42,10 +43,9 @@ public class TutorialMod {
         NeoForge.EVENT_BUS.register(this);
 
         ModCreativeModeTabs.register(modEventBus);
-
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-
+        ModSounds.register(modEventBus);
         ModDataComponent.register(modEventBus);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);

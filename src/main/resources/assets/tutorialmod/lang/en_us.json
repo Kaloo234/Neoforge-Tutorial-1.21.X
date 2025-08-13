@@ -13,6 +13,7 @@
   "item.tutorialmod.bluestone_shovel": "Bluestone Shovel",
   "item.tutorialmod.bluestone_axe": "Bluestone Axe",
   "item.tutorialmod.bluestone_hoe": "Bluestone Hoe",
+  "item.tutorialmod.bluestone_bow": "Bluestone Bow",
 
   "item.tutorialmod.bluestone_hammer": "Bluestone Hammer",
   "item.tutorialmod.bluestone_excavator": "Bluestone Excavator",
@@ -26,7 +27,8 @@
 
   "item.tutorialmod.kaloo234_armor_trim_smithing_template": "Kaloo234 Trim Template",
 
-  "item.tutorialmod.bluestone_bow": "Bluestone Bow",
+  "item.tutorialmod.bar_brawl_music_disc": "Bar Brawl Music Disc",
+  "item.tutorialmod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
 
 
   "block.tutorialmod.bluestone_block": "Block of Bluestone",

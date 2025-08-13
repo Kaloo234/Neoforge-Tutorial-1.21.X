@@ -4,6 +4,7 @@ import net.kaloo234.tutorialmod.TutorialMod;
 import net.kaloo234.tutorialmod.block.custom.BluestoneLampBlock;
 import net.kaloo234.tutorialmod.block.custom.MagicBlock;
 import net.kaloo234.tutorialmod.item.ModItems;
+import net.kaloo234.tutorialmod.sound.ModSounds;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -34,7 +35,8 @@ public class ModBlocks {
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
     public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block",
-            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()
+                    .sound(ModSounds.MAGIC_BLOCK_SOUNDS)));
 
     public static final DeferredBlock<StairBlock> BLUESTONE_STAIRS = registerBlock("bluestone_stairs",
             () -> new StairBlock(ModBlocks.BLUESTONE_BLOCK.get().defaultBlockState(),

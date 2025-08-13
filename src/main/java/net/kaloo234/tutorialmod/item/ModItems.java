@@ -2,6 +2,7 @@ package net.kaloo234.tutorialmod.item;
 
 import net.kaloo234.tutorialmod.TutorialMod;
 import net.kaloo234.tutorialmod.item.custom.*;
+import net.kaloo234.tutorialmod.sound.ModSounds;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
@@ -51,6 +52,8 @@ public class ModItems {
     public static final DeferredItem<HoeItem> BLUESTONE_HOE = ITEMS.register("bluestone_hoe",
             () -> new HoeItem(ModToolTiers.BLUESTONE, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTiers.BLUESTONE, 0.0f, -3.0f))));
+    public static final DeferredItem<Item> BLUESTONE_BOW = ITEMS.register("bluestone_bow",
+            () -> new BowItem(new Item.Properties().durability(500)));
 
     public static final DeferredItem<HammerItem> BLUESTONE_HAMMER = ITEMS.register("bluestone_hammer",
             () -> new HammerItem(ModToolTiers.BLUESTONE, new Item.Properties()
@@ -79,8 +82,8 @@ public class ModItems {
     public static final DeferredItem<Item> KALOO234_SMITHING_TEMPLATE = ITEMS.register("kaloo234_armor_trim_smithing_template",
         () -> SmithingTemplateItem.createArmorTrimTemplate(ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, "kaloo234")));
 
-    public static final DeferredItem<Item> BLUESTONE_BOW = ITEMS.register("bluestone_bow",
-            () -> new BowItem(new Item.Properties().durability(500)));
+    public static final DeferredItem<Item> BAR_BRAWL_MUSIC_DISC = ITEMS.register("bar_brawl_music_disc",
+            () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.BAR_BRAWL_KEY).stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -37,6 +37,7 @@ public class ModCreativeModeTabs {
                                 output.accept(ModItems.BLUESTONE_SHOVEL);
                                 output.accept(ModItems.BLUESTONE_AXE);
                                 output.accept(ModItems.BLUESTONE_HOE);
+                                output.accept(ModItems.BLUESTONE_BOW);
 
                                 output.accept(ModItems.BLUESTONE_HAMMER);
                                 output.accept(ModItems.BLUESTONE_EXCAVATOR);
@@ -50,7 +51,7 @@ public class ModCreativeModeTabs {
 
                                 output.accept(ModItems.KALOO234_SMITHING_TEMPLATE);
 
-                                output.accept(ModItems.BLUESTONE_BOW);
+                                output.accept(ModItems.BAR_BRAWL_MUSIC_DISC);
                             }).build());
 
     public static final Supplier<CreativeModeTab> BLUESTONE_BLOCKS_TAB =
