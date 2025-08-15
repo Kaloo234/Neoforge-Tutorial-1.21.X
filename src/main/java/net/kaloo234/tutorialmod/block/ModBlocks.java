@@ -2,6 +2,7 @@ package net.kaloo234.tutorialmod.block;
 
 import net.kaloo234.tutorialmod.TutorialMod;
 import net.kaloo234.tutorialmod.block.custom.BluestoneLampBlock;
+import net.kaloo234.tutorialmod.block.custom.GojiBerryBushBlock;
 import net.kaloo234.tutorialmod.block.custom.MagicBlock;
 import net.kaloo234.tutorialmod.block.custom.RadishCropBlock;
 import net.kaloo234.tutorialmod.item.ModItems;
@@ -73,6 +74,9 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> RADISH_CROP = BLOCKS.register("radish_crop",
             () -> new RadishCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BEETROOTS)));
+
+    public static final DeferredBlock<Block> GOJI_BERRY_BUSH = BLOCKS.register("goji_berry_bush",
+            () -> new GojiBerryBushBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SWEET_BERRY_BUSH)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

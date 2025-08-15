@@ -1,4 +1,4 @@
-// 1.21.1	2025-08-15T16:29:39.164153	Loot Tables
+// 1.21.1	2025-08-15T19:25:35.7777	Loot Tables
 387cdfa71b6750acfeb2caae84cee64efd033265 data/tutorialmod/loot_table/blocks/bluestone_block.json
 c10532eb761eacc8b81ac4055975f66dbdccf4cc data/tutorialmod/loot_table/blocks/bluestone_button.json
 a0479e75412bd59167fc9f8e325a54548b2b4e0b data/tutorialmod/loot_table/blocks/bluestone_door.json
@@ -12,5 +12,6 @@ afe4b76419b2fb6e2459d6926c19c0491a745ebf data/tutorialmod/loot_table/blocks/blue
 1e91634aa022a1d37580155f28f0625c62b32b40 data/tutorialmod/loot_table/blocks/bluestone_trapdoor.json
 790c1e2c9d9b1d484b9ea8612c82ad46b229fab1 data/tutorialmod/loot_table/blocks/bluestone_wall.json
 6d44f209ce98de72efb84fc03a3a9a925aaa2dca data/tutorialmod/loot_table/blocks/deepslate_bluestone_ore.json
+8f5d307b68f65f6c0465ccc6f5ebdaf06af8f461 data/tutorialmod/loot_table/blocks/goji_berry_bush.json
 8cadd73280b5040d1e510cad246834ca39b6b62f data/tutorialmod/loot_table/blocks/magic_block.json
 36b9bcd239fc7b8ab4aeafcbd04a4e2528293936 data/tutorialmod/loot_table/blocks/radish_crop.json
