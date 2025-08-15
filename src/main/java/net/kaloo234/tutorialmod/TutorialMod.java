@@ -3,9 +3,10 @@ package net.kaloo234.tutorialmod;
 import net.kaloo234.tutorialmod.block.ModBlocks;
 import net.kaloo234.tutorialmod.component.ModDataComponent;
 import net.kaloo234.tutorialmod.datagen.DataGenerators;
-import net.kaloo234.tutorialmod.event.ModClientEvents;
+import net.kaloo234.tutorialmod.effect.ModEffects;
 import net.kaloo234.tutorialmod.item.ModCreativeModeTabs;
 import net.kaloo234.tutorialmod.item.ModItems;
+import net.kaloo234.tutorialmod.potion.ModPotions;
 import net.kaloo234.tutorialmod.sound.ModSounds;
 import net.kaloo234.tutorialmod.util.ModItemsProperties;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -47,6 +48,8 @@ public class TutorialMod {
         ModBlocks.register(modEventBus);
         ModSounds.register(modEventBus);
         ModDataComponent.register(modEventBus);
+        ModEffects.register(modEventBus);
+        ModPotions.register(modEventBus);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }

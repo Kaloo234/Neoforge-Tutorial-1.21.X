@@ -3,6 +3,7 @@ package net.kaloo234.tutorialmod.event;
 import net.kaloo234.tutorialmod.TutorialMod;
 import net.kaloo234.tutorialmod.item.custom.ExcavatorItem;
 import net.kaloo234.tutorialmod.item.custom.HammerItem;
+import net.kaloo234.tutorialmod.potion.ModPotions;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
@@ -12,8 +13,11 @@ import net.minecraft.world.entity.animal.Sheep;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.alchemy.PotionBrewing;
+import net.minecraft.world.item.alchemy.Potions;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.event.brewing.RegisterBrewingRecipesEvent;
 import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
 import net.neoforged.neoforge.event.level.BlockEvent;
 
@@ -72,5 +76,12 @@ public class ModEvents {
                 player.getMainHandItem().shrink(1);
             }
         }
+    }
+
+    @SubscribeEvent
+    public static void onBrewingRecipeRegister(RegisterBrewingRecipesEvent event) {
+        PotionBrewing.Builder builder = event.getBuilder();
+
+        builder.addMix(Potions.AWKWARD, Items.SLIME_BALL, ModPotions.SLIMEY_POTION);
     }
 }
