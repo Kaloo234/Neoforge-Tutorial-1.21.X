@@ -4,6 +4,7 @@ import net.kaloo234.tutorialmod.block.ModBlocks;
 import net.kaloo234.tutorialmod.component.ModDataComponent;
 import net.kaloo234.tutorialmod.datagen.DataGenerators;
 import net.kaloo234.tutorialmod.effect.ModEffects;
+import net.kaloo234.tutorialmod.enchantment.ModEnchantmentEffects;
 import net.kaloo234.tutorialmod.item.ModCreativeModeTabs;
 import net.kaloo234.tutorialmod.item.ModItems;
 import net.kaloo234.tutorialmod.potion.ModPotions;
@@ -50,6 +51,7 @@ public class TutorialMod {
         ModDataComponent.register(modEventBus);
         ModEffects.register(modEventBus);
         ModPotions.register(modEventBus);
+        ModEnchantmentEffects.register(modEventBus);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
