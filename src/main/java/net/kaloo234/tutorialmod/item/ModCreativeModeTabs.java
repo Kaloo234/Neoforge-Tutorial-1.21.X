@@ -52,6 +52,7 @@ public class ModCreativeModeTabs {
                                 output.accept(ModItems.KALOO234_SMITHING_TEMPLATE);
 
                                 output.accept(ModItems.BAR_BRAWL_MUSIC_DISC);
+                                output.accept(ModItems.RADISH_SEEDS);
                             }).build());
 
     public static final Supplier<CreativeModeTab> BLUESTONE_BLOCKS_TAB =

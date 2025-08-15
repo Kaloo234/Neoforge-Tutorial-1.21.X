@@ -1,4 +1,4 @@
-// 1.21.1	2025-08-13T17:44:42.152933	Item Models: tutorialmod
+// 1.21.1	2025-08-15T16:29:39.165443	Item Models: tutorialmod
 f746b64540daf2ab6302b3ec01a78490c48fc10b assets/tutorialmod/models/item/bar_brawl_music_disc.json
 b71c377ba5963fa937a5684265e1b1bb1a7e3172 assets/tutorialmod/models/item/bluestone.json
 39fcfbfa92e5c981dd8604afedb3beba960cc11f assets/tutorialmod/models/item/bluestone_axe.json
@@ -60,5 +60,6 @@ c5577af5c7144484e14fbe41831c29f310dc7665 assets/tutorialmod/models/item/blueston
 91ec90598690688b7129cd5976415ae5158e72d3 assets/tutorialmod/models/item/frostfire_ice.json
 4af225c495e9b12b3fa44313d73386bd65ddfd20 assets/tutorialmod/models/item/kaloo234_armor_trim_smithing_template.json
 f4c84ba8717deb3f252eef0b2e0833f60e735029 assets/tutorialmod/models/item/radish.json
+31a67c391f1ba73a4df4fca94eeb64f7c376bc2e assets/tutorialmod/models/item/radish_seeds.json
 b8e5df6d19e437db55142ce54a620905277d331e assets/tutorialmod/models/item/raw_bluestone.json
 fa9080666ba4e3910d0814ec35a3e300f861fb1c assets/tutorialmod/models/item/starlight_ashes.json

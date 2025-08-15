@@ -1,6 +1,7 @@
 package net.kaloo234.tutorialmod.item;
 
 import net.kaloo234.tutorialmod.TutorialMod;
+import net.kaloo234.tutorialmod.block.ModBlocks;
 import net.kaloo234.tutorialmod.item.custom.*;
 import net.kaloo234.tutorialmod.sound.ModSounds;
 import net.minecraft.network.chat.Component;
@@ -84,6 +85,9 @@ public class ModItems {
 
     public static final DeferredItem<Item> BAR_BRAWL_MUSIC_DISC = ITEMS.register("bar_brawl_music_disc",
             () -> new Item(new Item.Properties().jukeboxPlayable(ModSounds.BAR_BRAWL_KEY).stacksTo(1)));
+
+    public static final DeferredItem<Item> RADISH_SEEDS = ITEMS.register("radish_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.RADISH_CROP.get(), new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

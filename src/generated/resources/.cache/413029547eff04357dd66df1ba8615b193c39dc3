@@ -1,4 +1,4 @@
-// 1.21.1	2025-08-01T19:54:03.380468432	Block States: tutorialmod
+// 1.21.1	2025-08-15T16:29:39.164709	Block States: tutorialmod
 6990d0305ef67a810caa862d54e382854f6514bd assets/tutorialmod/blockstates/bluestone_block.json
 4859e88bbc31aa3795cdd239bf627cc1d6156e86 assets/tutorialmod/blockstates/bluestone_button.json
 c5052ce2fa59276d4a8322aebe2d652f81318b44 assets/tutorialmod/blockstates/bluestone_door.json
@@ -13,6 +13,7 @@ c2542fc302650353af57d11c114372157c4a9c84 assets/tutorialmod/blockstates/blueston
 6526615f28df1e36e27e85b60b07ba2ff0661afb assets/tutorialmod/blockstates/bluestone_wall.json
 1bb540c237a469f690d59fc869273cd3bb265400 assets/tutorialmod/blockstates/deepslate_bluestone_ore.json
 2d316979b5247b802b0590d94b40bac75fde6974 assets/tutorialmod/blockstates/magic_block.json
+369ff19f0ddd34b3501a422ca9ba6eee50c28c09 assets/tutorialmod/blockstates/radish_crop.json
 5efb284a7d44f09df6550ec5221ef0da8d525cad assets/tutorialmod/models/block/bluestone_block.json
 f6a36acc25d13678489988f2acee52766384ec4d assets/tutorialmod/models/block/bluestone_button.json
 ee4c3134afbcdd8da0b92eb10aad7c56699f684e assets/tutorialmod/models/block/bluestone_button_pressed.json
@@ -48,6 +49,10 @@ e6bd7c9b55f3f80fe12f0acc6292a64edbda9ab8 assets/tutorialmod/models/block/bluesto
 5f524aed1c3dcf656ea9178ea8eecbb4003b62de assets/tutorialmod/models/block/bluestone_wall_side_tall.json
 b3db27bd461fd9c0beb27e59cc6315a93553bf1b assets/tutorialmod/models/block/deepslate_bluestone_ore.json
 ed27aaa00c275028e1495bb6d6bfdcea1851067b assets/tutorialmod/models/block/magic_block.json
+31185a07fc2dc6f1371a066ffe41a03981a51692 assets/tutorialmod/models/block/radish_crop_stage0.json
+130f25109def058713c7d74bf283b7c097ae5425 assets/tutorialmod/models/block/radish_crop_stage1.json
+0238d5cbef661310169a033429e97d1485072fe7 assets/tutorialmod/models/block/radish_crop_stage2.json
+7e4b2f1a22ca8f24a1760fa3ecefaa513861b41a assets/tutorialmod/models/block/radish_crop_stage3.json
 287e47e41596daa4b530a62e8c0a4c5667dfe484 assets/tutorialmod/models/item/bluestone_block.json
 94aef07342b50b208b1fe42629945866bf2329ba assets/tutorialmod/models/item/bluestone_fence_gate.json
 a6dd68b7043bb44d229051498ca1b9d9a500efd9 assets/tutorialmod/models/item/bluestone_lamp.json

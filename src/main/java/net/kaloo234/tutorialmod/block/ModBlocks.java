@@ -3,6 +3,7 @@ package net.kaloo234.tutorialmod.block;
 import net.kaloo234.tutorialmod.TutorialMod;
 import net.kaloo234.tutorialmod.block.custom.BluestoneLampBlock;
 import net.kaloo234.tutorialmod.block.custom.MagicBlock;
+import net.kaloo234.tutorialmod.block.custom.RadishCropBlock;
 import net.kaloo234.tutorialmod.item.ModItems;
 import net.kaloo234.tutorialmod.sound.ModSounds;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -69,6 +70,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> BLUESTONE_LAMP = registerBlock("bluestone_lamp",
             () -> new BluestoneLampBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()
                     .lightLevel(state -> state.getValue(BluestoneLampBlock.CLICKED) ? 15 : 0)));
+
+    public static final DeferredBlock<Block> RADISH_CROP = BLOCKS.register("radish_crop",
+            () -> new RadishCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BEETROOTS)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
