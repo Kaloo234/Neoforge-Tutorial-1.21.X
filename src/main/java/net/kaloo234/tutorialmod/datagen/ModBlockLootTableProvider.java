@@ -37,9 +37,15 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         add(ModBlocks.BLUESTONE_ORE.get(),
                 block -> createOreDrop(ModBlocks.BLUESTONE_BLOCK.get(), ModItems.RAW_BLUESTONE.get()));
-        add(ModBlocks.DEEPSLATE_BLUESTONE_ORE.get(),
-                block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_BLUESTONE_ORE.get(),
+        add(ModBlocks.BLUESTONE_DEEPSLATE_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.BLUESTONE_DEEPSLATE_ORE.get(),
                         ModItems.RAW_BLUESTONE.get(), 1, 3));
+        add(ModBlocks.BLUESTONE_END_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.BLUESTONE_END_ORE.get(),
+                        ModItems.RAW_BLUESTONE.get(), 3, 6));
+        add(ModBlocks.BLUESTONE_NETHER_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.BLUESTONE_NETHER_ORE.get(),
+                        ModItems.RAW_BLUESTONE.get(), 4, 8));
 
         dropSelf(ModBlocks.BLUESTONE_STAIRS.get());
         add(ModBlocks.BLUESTONE_SLAB.get(),

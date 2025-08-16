@@ -28,7 +28,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.BLUESTONE_BLOCK);
 
         blockWithItem(ModBlocks.BLUESTONE_ORE);
-        blockWithItem(ModBlocks.DEEPSLATE_BLUESTONE_ORE);
+        blockWithItem(ModBlocks.BLUESTONE_DEEPSLATE_ORE);
+        blockWithItem(ModBlocks.BLUESTONE_END_ORE);
+        blockWithItem(ModBlocks.BLUESTONE_NETHER_ORE);
 
         blockWithItem(ModBlocks.MAGIC_BLOCK);
 

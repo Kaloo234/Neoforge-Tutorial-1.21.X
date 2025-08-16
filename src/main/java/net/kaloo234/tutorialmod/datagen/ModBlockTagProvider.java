@@ -22,7 +22,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.BLUESTONE_BLOCK.get())
                 .add(ModBlocks.BLUESTONE_ORE.get())
-                .add(ModBlocks.DEEPSLATE_BLUESTONE_ORE.get())
+                .add(ModBlocks.BLUESTONE_DEEPSLATE_ORE.get())
                 .add(ModBlocks.MAGIC_BLOCK.get())
                 .add(ModBlocks.BLUESTONE_LAMP.get());
 
@@ -31,7 +31,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.BLUESTONE_LAMP.get());
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.DEEPSLATE_BLUESTONE_ORE.get())
+                .add(ModBlocks.BLUESTONE_DEEPSLATE_ORE.get())
                 .add(ModBlocks.MAGIC_BLOCK.get());
 
         tag(BlockTags.FENCES)

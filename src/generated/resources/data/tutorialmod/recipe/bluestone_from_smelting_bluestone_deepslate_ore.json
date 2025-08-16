@@ -1,11 +1,11 @@
 {
-  "type": "minecraft:blasting",
+  "type": "minecraft:smelting",
   "category": "misc",
-  "cookingtime": 100,
+  "cookingtime": 200,
   "experience": 0.25,
   "group": "bluestone",
   "ingredient": {
-    "item": "tutorialmod:deepslate_bluestone_ore"
+    "item": "tutorialmod:bluestone_deepslate_ore"
   },
   "result": {
     "count": 1,

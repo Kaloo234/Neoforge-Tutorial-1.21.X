@@ -40,7 +40,9 @@
 
   "block.tutorialmod.bluestone_block": "Block of Bluestone",
   "block.tutorialmod.bluestone_ore": "Bluestone Ore",
-  "block.tutorialmod.deepslate_bluestone_ore": "Deepslate Bluestone Ore",
+  "block.tutorialmod.bluestone_deepslate_ore": "Bluestone Deepslate Ore",
+  "block.tutorialmod.bluestone_end_ore": "Bluestone End Ore",
+  "block.tutorialmod.bluestone_nether_ore": "Bluestone Nether Ore",
 
   "block.tutorialmod.magic_block": "Magic Block",
 

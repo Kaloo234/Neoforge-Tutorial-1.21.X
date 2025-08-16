@@ -6,7 +6,6 @@ import net.kaloo234.tutorialmod.sound.ModSounds;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -29,8 +28,8 @@ public class ChiselItem extends Item {
                     Blocks.DEEPSLATE, Blocks.DEEPSLATE_BRICKS,
                     Blocks.GOLD_BLOCK, Blocks.IRON_BLOCK,
                     Blocks.IRON_BLOCK, Blocks.STONE,
-                    ModBlocks.BLUESTONE_ORE.get(), ModBlocks.DEEPSLATE_BLUESTONE_ORE.get(),
-                    ModBlocks.DEEPSLATE_BLUESTONE_ORE.get(), ModBlocks.BLUESTONE_ORE.get()
+                    ModBlocks.BLUESTONE_ORE.get(), ModBlocks.BLUESTONE_DEEPSLATE_ORE.get(),
+                    ModBlocks.BLUESTONE_DEEPSLATE_ORE.get(), ModBlocks.BLUESTONE_ORE.get()
             );
 
     public ChiselItem(Properties properties) {

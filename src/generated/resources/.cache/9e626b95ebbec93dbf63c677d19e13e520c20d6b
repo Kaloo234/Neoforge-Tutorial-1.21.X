@@ -1,8 +1,8 @@
-// 1.21.1	2025-08-04T20:09:45.843412012	Tags for minecraft:block mod id tutorialmod
+// 1.21.1	2025-08-16T19:31:10.23655	Tags for minecraft:block mod id tutorialmod
 e0b784f552c056b20be489ad26ded4617f03a2cf data/minecraft/tags/block/fence_gates.json
 a4962149195e1b33c60be051c9459d997aff2f5a data/minecraft/tags/block/fences.json
-f29673637371dc451bf0f9c6f01fff4c327618ec data/minecraft/tags/block/mineable/pickaxe.json
-bb04a714b3a2c3fcdae2b6cc7b16526c139bd597 data/minecraft/tags/block/needs_diamond_tool.json
+9b90e6c39887353184f2a451c8bcaf853abb32c8 data/minecraft/tags/block/mineable/pickaxe.json
+32d4049d995cb9ca771ab24ff7c111b6e6b91a6d data/minecraft/tags/block/needs_diamond_tool.json
 fe2e29b4c9c45e3424a890f1b50fae73777cd80a data/minecraft/tags/block/needs_iron_tool.json
 77af3c587570621db5d1e74efeeec4ad61fc914f data/minecraft/tags/block/walls.json
 2922e5e603e9b803a563bed07b5a7529b25c3411 data/tutorialmod/tags/block/incorrect_for_bluestone_tool.json

@@ -31,10 +31,16 @@ public class ModBlocks {
     public static final DeferredBlock<Block> BLUESTONE_ORE = registerBlock("bluestone_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 4), BlockBehaviour.Properties.of()
                     .strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
-
-    public static final DeferredBlock<Block> DEEPSLATE_BLUESTONE_ORE = registerBlock("deepslate_bluestone_ore",
-            () -> new DropExperienceBlock(UniformInt.of(2, 4), BlockBehaviour.Properties.of()
+    public static final DeferredBlock<Block> BLUESTONE_DEEPSLATE_ORE = registerBlock("bluestone_deepslate_ore",
+            () -> new DropExperienceBlock(UniformInt.of(3, 6), BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+    public static final DeferredBlock<Block> BLUESTONE_END_ORE = registerBlock("bluestone_end_ore",
+            () -> new DropExperienceBlock(UniformInt.of(5, 9), BlockBehaviour.Properties.of()
+                    .strength(7f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+    public static final DeferredBlock<Block> BLUESTONE_NETHER_ORE = registerBlock("bluestone_nether_ore",
+            () -> new DropExperienceBlock(UniformInt.of(1, 5), BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+
 
     public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block",
             () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()

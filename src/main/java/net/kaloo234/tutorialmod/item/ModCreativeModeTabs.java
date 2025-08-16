@@ -67,7 +67,9 @@ public class ModCreativeModeTabs {
                             .displayItems((parameters, output) -> {
                                 output.accept(ModBlocks.BLUESTONE_BLOCK);
                                 output.accept(ModBlocks.BLUESTONE_ORE);
-                                output.accept(ModBlocks.DEEPSLATE_BLUESTONE_ORE);
+                                output.accept(ModBlocks.BLUESTONE_DEEPSLATE_ORE);
+                                output.accept(ModBlocks.BLUESTONE_END_ORE);
+                                output.accept(ModBlocks.BLUESTONE_NETHER_ORE);
 
                                 output.accept(ModBlocks.MAGIC_BLOCK);
 

@@ -24,7 +24,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
         List<ItemLike> BLUESTONE_SMELTABLES = List.of(ModItems.RAW_BLUESTONE.get(),
-                ModBlocks.BLUESTONE_ORE.get(), ModBlocks.DEEPSLATE_BLUESTONE_ORE.get());
+                ModBlocks.BLUESTONE_ORE.get(), ModBlocks.BLUESTONE_DEEPSLATE_ORE.get());
 
 //############################
 //          SMELTING

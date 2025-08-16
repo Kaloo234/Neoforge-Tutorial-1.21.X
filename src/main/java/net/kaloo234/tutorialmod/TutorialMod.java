@@ -70,7 +70,7 @@ public class TutorialMod {
         }
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.BLUESTONE_ORE);
-            event.accept(ModBlocks.DEEPSLATE_BLUESTONE_ORE);
+            event.accept(ModBlocks.BLUESTONE_DEEPSLATE_ORE);
         }
     }
 
