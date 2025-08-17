@@ -1,7 +1,9 @@
-// 1.21.1	2025-08-09T10:33:43.383457763	Tags for minecraft:item mod id tutorialmod
+// 1.21.1	2025-08-17T11:06:10.002619	Tags for minecraft:item mod id tutorialmod
 dbc36a325576b5a20944a98470367b2cf89e47eb data/minecraft/tags/item/axes.json
 43258cbdd658fc63e1a1c788065e32484f033a2a data/minecraft/tags/item/hoes.json
+6ed04b30e3cd16c9d86ca497efb5b9acad7f8211 data/minecraft/tags/item/logs_that_burn.json
 84fe3688fd3b6b32b28c7b8b8d31ecf043c02d50 data/minecraft/tags/item/pickaxes.json
+c23c00484fcc9e277505e254336ad964f0c8768c data/minecraft/tags/item/planks.json
 71fddd4a99bb5b9b6bedf485792859656a25469c data/minecraft/tags/item/shovels.json
 1ef0acc2f2fb3503373b4d97242b17623aa85e80 data/minecraft/tags/item/swords.json
 ad7f72eb5b0a7a5762e7213d95468110324f645c data/minecraft/tags/item/trim_materials.json

@@ -1,5 +1,9 @@
-// 1.21.1	2025-08-15T19:25:35.779105	Item Models: tutorialmod
+// 1.21.1	2025-08-17T11:11:07.795575	Item Models: tutorialmod
 f746b64540daf2ab6302b3ec01a78490c48fc10b assets/tutorialmod/models/item/bar_brawl_music_disc.json
+b79acaaf96af5a35ff9360d1cac8e57328a3a926 assets/tutorialmod/models/item/bloodwood_button.json
+86a660262f2d5b488d0ff6694ae81178b79de0f0 assets/tutorialmod/models/item/bloodwood_door.json
+4c32c558f35afd6bf12fa90cda1aa7ef86cf5aa1 assets/tutorialmod/models/item/bloodwood_fence.json
+a60cbf88831b40befcd68c9991623e78477b23cc assets/tutorialmod/models/item/bloodwood_sapling.json
 b71c377ba5963fa937a5684265e1b1bb1a7e3172 assets/tutorialmod/models/item/bluestone.json
 39fcfbfa92e5c981dd8604afedb3beba960cc11f assets/tutorialmod/models/item/bluestone_axe.json
 e8034c967cf496ebcbbc3df5cc2795687223d866 assets/tutorialmod/models/item/bluestone_boots.json

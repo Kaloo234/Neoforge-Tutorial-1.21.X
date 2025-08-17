@@ -26,6 +26,17 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.MAGIC_BLOCK.get())
                 .add(ModBlocks.BLUESTONE_LAMP.get());
 
+        tag(BlockTags.MINEABLE_WITH_AXE)
+                .add(ModBlocks.BLOODWOOD_PLANKS.get())
+                .add(ModBlocks.BLOODWOOD_STAIRS.get())
+                .add(ModBlocks.BLOODWOOD_SLAB.get())
+                .add(ModBlocks.BLOODWOOD_BUTTON.get())
+                .add(ModBlocks.BLOODWOOD_PRESSURE_PLATE.get())
+                .add(ModBlocks.BLOODWOOD_FENCE.get())
+                .add(ModBlocks.BLOODWOOD_FENCE_GATE.get())
+                .add(ModBlocks.BLOODWOOD_DOOR.get())
+                .add(ModBlocks.BLOODWOOD_TRAPDOOR.get());
+
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.BLUESTONE_ORE.get())
                 .add(ModBlocks.BLUESTONE_LAMP.get());
@@ -36,8 +47,11 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
         tag(BlockTags.FENCES)
                 .add(ModBlocks.BLUESTONE_FENCE.get());
+        tag(BlockTags.WOODEN_FENCES)
+                .add(ModBlocks.BLOODWOOD_FENCE.get());
         tag(BlockTags.FENCE_GATES)
-                .add(ModBlocks.BLUESTONE_FENCE_GATE.get());
+                .add(ModBlocks.BLUESTONE_FENCE_GATE.get())
+                .add(ModBlocks.BLOODWOOD_FENCE_GATE.get());
         tag(BlockTags.WALLS)
                 .add(ModBlocks.BLUESTONE_WALL.get());
 
@@ -48,5 +62,11 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(ModTags.Blocks.INCORRECT_FOR_BLUESTONE_TOOL)
                 .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)
                 .remove(ModTags.Blocks.NEEDS_BLUESTONE_TOOL);
+
+        this.tag(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.BLOODWOOD_LOG.get())
+                .add(ModBlocks.BLOODWOOD_WOOD.get())
+                .add(ModBlocks.STRIPPED_BLOODWOOD_LOG.get())
+                .add(ModBlocks.STRIPPED_BLOODWOOD_WOOD.get());
     }
 }

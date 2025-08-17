@@ -83,6 +83,22 @@ public class ModCreativeModeTabs {
                                 output.accept(ModBlocks.BLUESTONE_DOOR);
                                 output.accept(ModBlocks.BLUESTONE_TRAPDOOR);
 
+                                output.accept(ModBlocks.BLOODWOOD_STAIRS);
+                                output.accept(ModBlocks.BLOODWOOD_SLAB);
+                                output.accept(ModBlocks.BLOODWOOD_PRESSURE_PLATE);
+                                output.accept(ModBlocks.BLOODWOOD_BUTTON);
+                                output.accept(ModBlocks.BLOODWOOD_FENCE);
+                                output.accept(ModBlocks.BLOODWOOD_FENCE_GATE);
+                                output.accept(ModBlocks.BLOODWOOD_DOOR);
+                                output.accept(ModBlocks.BLOODWOOD_TRAPDOOR);
+                                output.accept(ModBlocks.BLOODWOOD_PLANKS);
+                                output.accept(ModBlocks.BLOODWOOD_WOOD);
+                                output.accept(ModBlocks.STRIPPED_BLOODWOOD_LOG);
+                                output.accept(ModBlocks.STRIPPED_BLOODWOOD_WOOD);
+                                output.accept(ModBlocks.BLOODWOOD_LEAVES);
+                                output.accept(ModBlocks.BLOODWOOD_LOG);
+                                output.accept(ModBlocks.BLOODWOOD_SAPLING);
+
                                 output.accept(ModBlocks.BLUESTONE_LAMP);
                             }).build());
 

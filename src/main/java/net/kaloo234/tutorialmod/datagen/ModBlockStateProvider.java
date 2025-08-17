@@ -5,9 +5,12 @@ import net.kaloo234.tutorialmod.block.ModBlocks;
 import net.kaloo234.tutorialmod.block.custom.BluestoneLampBlock;
 import net.kaloo234.tutorialmod.block.custom.GojiBerryBushBlock;
 import net.kaloo234.tutorialmod.block.custom.RadishCropBlock;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.CropBlock;
+import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.SweetBerryBushBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
@@ -56,12 +59,61 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.BLUESTONE_FENCE_GATE);
         blockItem(ModBlocks.BLUESTONE_TRAPDOOR, "_bottom");
 
+        blockWithItem(ModBlocks.BLOODWOOD_PLANKS);
+
+        stairsBlock(ModBlocks.BLOODWOOD_STAIRS.get(), blockTexture(ModBlocks.BLOODWOOD_PLANKS.get()));
+        slabBlock(ModBlocks.BLOODWOOD_SLAB.get(), blockTexture(ModBlocks.BLOODWOOD_PLANKS.get()),
+                blockTexture(ModBlocks.BLOODWOOD_PLANKS.get()));
+
+        buttonBlock(ModBlocks.BLOODWOOD_BUTTON.get(), blockTexture(ModBlocks.BLOODWOOD_PLANKS.get()));
+        pressurePlateBlock(ModBlocks.BLOODWOOD_PRESSURE_PLATE.get(), blockTexture(ModBlocks.BLOODWOOD_PLANKS.get()));
+
+        fenceBlock(ModBlocks.BLOODWOOD_FENCE.get(), blockTexture(ModBlocks.BLOODWOOD_PLANKS.get()));
+        fenceGateBlock(ModBlocks.BLOODWOOD_FENCE_GATE.get(), blockTexture(ModBlocks.BLOODWOOD_PLANKS.get()));
+
+        doorBlockWithRenderType(ModBlocks.BLOODWOOD_DOOR.get(), modLoc("block/bloodwood_door_bottom"),
+                modLoc("block/bloodwood_door_top"), "cutout");
+        trapdoorBlockWithRenderType(ModBlocks.BLOODWOOD_TRAPDOOR.get(), modLoc("block/bloodwood_trapdoor"),
+                true, "cutout");
+
+        blockItem(ModBlocks.BLOODWOOD_STAIRS);
+        blockItem(ModBlocks.BLOODWOOD_SLAB);
+        blockItem(ModBlocks.BLOODWOOD_PRESSURE_PLATE);
+        blockItem(ModBlocks.BLOODWOOD_FENCE_GATE);
+        blockItem(ModBlocks.BLOODWOOD_TRAPDOOR, "_bottom");
+
+        logBlock(((RotatedPillarBlock) ModBlocks.BLOODWOOD_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.BLOODWOOD_WOOD.get()),
+                blockTexture(ModBlocks.BLOODWOOD_LOG.get()), blockTexture(ModBlocks.BLOODWOOD_LOG.get()));
+        logBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_BLOODWOOD_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_BLOODWOOD_WOOD.get()),
+                blockTexture(ModBlocks.STRIPPED_BLOODWOOD_LOG.get()), blockTexture(ModBlocks.STRIPPED_BLOODWOOD_LOG.get()));
+
+        blockItem(ModBlocks.BLOODWOOD_LOG);
+        blockItem(ModBlocks.BLOODWOOD_WOOD);
+        blockItem(ModBlocks.STRIPPED_BLOODWOOD_LOG);
+        blockItem(ModBlocks.STRIPPED_BLOODWOOD_WOOD);
+
+        leavesBlock(ModBlocks.BLOODWOOD_LEAVES);
+        saplingBlock(ModBlocks.BLOODWOOD_SAPLING);
+
         customLamp();
 
         makeCrop(((CropBlock) ModBlocks.RADISH_CROP.get()),
                 "radish_crop_stage", "radish_crop_stage");
         makeBush(((SweetBerryBushBlock) ModBlocks.GOJI_BERRY_BUSH.get()),
                 "goji_berry_bush_stage", "goji_berry_bush_stage");
+    }
+
+    private void saplingBlock(DeferredBlock<Block> blockRegistryObject) {
+        simpleBlock(blockRegistryObject.get(),
+                models().cross(BuiltInRegistries.BLOCK.getKey(blockRegistryObject.get()).getPath(), blockTexture(blockRegistryObject.get())).renderType("cutout"));
+    }
+
+    private void leavesBlock(DeferredBlock<Block> blockRegistryObject) {
+        simpleBlockWithItem(blockRegistryObject.get(),
+                models().singleTexture(BuiltInRegistries.BLOCK.getKey(blockRegistryObject.get()).getPath(), ResourceLocation.parse("minecraft:block/leaves"),
+                        "all", blockTexture(blockRegistryObject.get())).renderType("cutout"));
     }
 
     public void makeBush(SweetBerryBushBlock block, String modelName, String textureName) {

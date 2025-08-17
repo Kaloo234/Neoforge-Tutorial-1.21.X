@@ -61,6 +61,27 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         dropSelf(ModBlocks.BLUESTONE_LAMP.get());
 
+        dropSelf(ModBlocks.BLOODWOOD_STAIRS.get());
+        add(ModBlocks.BLOODWOOD_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.BLOODWOOD_SLAB.get()));
+        dropSelf(ModBlocks.BLOODWOOD_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.BLOODWOOD_BUTTON.get());
+        dropSelf(ModBlocks.BLOODWOOD_FENCE.get());
+        dropSelf(ModBlocks.BLOODWOOD_FENCE_GATE.get());
+        add(ModBlocks.BLOODWOOD_DOOR.get(),
+                block -> createDoorTable(ModBlocks.BLOODWOOD_DOOR.get()));
+        dropSelf(ModBlocks.BLOODWOOD_TRAPDOOR.get());
+
+        dropSelf(ModBlocks.BLOODWOOD_LOG.get());
+        dropSelf(ModBlocks.BLOODWOOD_WOOD.get());
+        dropSelf(ModBlocks.STRIPPED_BLOODWOOD_LOG.get());
+        dropSelf(ModBlocks.STRIPPED_BLOODWOOD_WOOD.get());
+        dropSelf(ModBlocks.BLOODWOOD_PLANKS.get());
+        dropSelf(ModBlocks.BLOODWOOD_SAPLING.get());
+
+        this.add(ModBlocks.BLOODWOOD_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.BLOODWOOD_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
         LootItemCondition.Builder lootItemConditionBuilder = LootItemBlockStatePropertyCondition.hasBlockStateProperties(ModBlocks.RADISH_CROP.get())
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(RadishCropBlock.AGE, 3));
 

@@ -1,18 +1,61 @@
 package net.kaloo234.tutorialmod.worldgen;
 
 import net.kaloo234.tutorialmod.TutorialMod;
+import net.kaloo234.tutorialmod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
+import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer;
+import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
+import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
+import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
+
+import java.util.List;
 
 public class ModConfiguredFeatures {
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWOLRD_BLUESTONE_ORE_KEY = registerKey("bluestone_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_BLUESTONE_ORE_KEY = registerKey("nether_bluestone_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> END_BLUESTONE_ORE_KEY = registerKey("end_bluestone_ore");
+
+    public static final ResourceKey<ConfiguredFeature<?, ?>> BLOODWOOD_KEY = registerKey("bloodwood");
+
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
+        RuleTest stoneReplaceables = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
+        RuleTest deepslateReplaceables = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
+        RuleTest netherReplaceables = new BlockMatchTest(Blocks.NETHERRACK);
+        RuleTest endReplaceables = new BlockMatchTest(Blocks.END_STONE);
 
+        List<OreConfiguration.TargetBlockState> overworldBluestoneOres = List.of(
+                OreConfiguration.target(stoneReplaceables, ModBlocks.BLUESTONE_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables, ModBlocks.BLUESTONE_DEEPSLATE_ORE.get().defaultBlockState())
+        );
 
+        register(context, OVERWOLRD_BLUESTONE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldBluestoneOres, 9));
+        register(context, NETHER_BLUESTONE_ORE_KEY, Feature.ORE, new OreConfiguration(netherReplaceables,
+                ModBlocks.BLUESTONE_NETHER_ORE.get().defaultBlockState(), 9));
+        register(context, END_BLUESTONE_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
+                ModBlocks.BLUESTONE_END_ORE.get().defaultBlockState(), 9));
+
+        register(context, BLOODWOOD_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                BlockStateProvider.simple(ModBlocks.BLOODWOOD_LOG.get()),
+                new ForkingTrunkPlacer(4, 4, 3),
+
+                BlockStateProvider.simple(ModBlocks.BLOODWOOD_LEAVES.get()),
+                new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(3), 3),
+
+                new TwoLayersFeatureSize(1, 0, 2)).build());
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {
