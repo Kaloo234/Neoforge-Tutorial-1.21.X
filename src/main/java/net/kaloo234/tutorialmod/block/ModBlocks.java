@@ -131,7 +131,8 @@ public class ModBlocks {
             });
 
     public static final DeferredBlock<Block> BLOODWOOD_SAPLING = registerBlock("bloodwood_sapling",
-            () -> new SaplingBlock(ModTreeGrowers.BLOODWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+            () -> new ModSaplingBlock(ModTreeGrowers.BLOODWOOD, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING),
+                    () -> Blocks.NETHERRACK));
 
     public static final DeferredBlock<StairBlock> BLOODWOOD_STAIRS = registerBlock("bloodwood_stairs",
             () -> new StairBlock(ModBlocks.BLOODWOOD_PLANKS.get().defaultBlockState(),

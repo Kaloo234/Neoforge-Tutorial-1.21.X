@@ -1,11 +1,12 @@
-// 1.21.1	2025-08-17T11:06:10.002496	Tags for minecraft:block mod id tutorialmod
+// 1.21.1	2025-08-17T11:37:10.87275	Tags for minecraft:block mod id tutorialmod
 5c76fe70691e08e5d83eff4b1c101b0970b04084 data/minecraft/tags/block/fence_gates.json
-b81864d1770ef7a055370a302f5d289c8eecba9e data/minecraft/tags/block/fences.json
+a4962149195e1b33c60be051c9459d997aff2f5a data/minecraft/tags/block/fences.json
 6ed04b30e3cd16c9d86ca497efb5b9acad7f8211 data/minecraft/tags/block/logs_that_burn.json
 9d88afcfd1989dfa686bfbc454b7146c25604a94 data/minecraft/tags/block/mineable/axe.json
 9b90e6c39887353184f2a451c8bcaf853abb32c8 data/minecraft/tags/block/mineable/pickaxe.json
 32d4049d995cb9ca771ab24ff7c111b6e6b91a6d data/minecraft/tags/block/needs_diamond_tool.json
 fe2e29b4c9c45e3424a890f1b50fae73777cd80a data/minecraft/tags/block/needs_iron_tool.json
 77af3c587570621db5d1e74efeeec4ad61fc914f data/minecraft/tags/block/walls.json
+ab81e56a28dc6f83d11718e3c82eb858f6e8e038 data/minecraft/tags/block/wooden_fences.json
 2922e5e603e9b803a563bed07b5a7529b25c3411 data/tutorialmod/tags/block/incorrect_for_bluestone_tool.json
 8f7a4c80d2b2ca61dd45338aaeee091a91754cf9 data/tutorialmod/tags/block/needs_bluestone_tool.json
