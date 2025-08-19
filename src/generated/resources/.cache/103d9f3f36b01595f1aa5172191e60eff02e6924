@@ -1,10 +1,11 @@
-// 1.21.1	2025-08-17T12:20:08.552449	Registries
+// 1.21.1	2025-08-19T07:11:25.329896	Registries
 3fd2de41d7f56602b24c8c3db6189289bbbe5aec data/tutorialmod/enchantment/lightning_striker.json
 cd3b965c47cc30c745c17681e49834f0fc67cecd data/tutorialmod/neoforge/biome_modifier/add_bluestone_ore.json
 7ab1f9ceb12b66b6cf1305c0ae694b35153a969d data/tutorialmod/neoforge/biome_modifier/add_end_bluestone_ore.json
 c7c7e8a75fd3ceeffd6f87ac0d6bf2c29ce9e879 data/tutorialmod/neoforge/biome_modifier/add_goji_berry_bush.json
 9e2379cd499f34a53a1b21f573422d64695a24de data/tutorialmod/neoforge/biome_modifier/add_nether_bluestone_ore.json
 aaf11e04d11a88b56a609c7dfd1d1c1a5271ae31 data/tutorialmod/neoforge/biome_modifier/add_tree_bloodwood.json
+2f23c1f4c7df2d3b5f72264e46c51344fc6dd85e data/tutorialmod/neoforge/biome_modifier/spawn_gecko.json
 b4105a8ad72ca75e2c0415cd7a519da094d96cf4 data/tutorialmod/trim_material/bluestone.json
 6e444d14462e507fa165e0053ace559ecbe7084b data/tutorialmod/trim_pattern/kaloo234.json
 78044b3988a05b47f3654a22032cf6087faa727d data/tutorialmod/worldgen/configured_feature/bloodwood.json
