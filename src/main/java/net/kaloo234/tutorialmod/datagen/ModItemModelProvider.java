@@ -69,7 +69,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.BLUESTONE_EXCAVATOR.get());
 
         trimmedArmorItem(ModItems.BLUESTONE_HELMET);
-        trimmedArmorItem(ModItems.BLUESTONE_CHEStPLATE);
+        trimmedArmorItem(ModItems.BLUESTONE_CHESTPLATE);
         trimmedArmorItem(ModItems.BLUESTONE_LEGGINGS);
         trimmedArmorItem(ModItems.BLUESTONE_BOOTS);
 
@@ -83,6 +83,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.GOJI_BERRIES.get());
 
         saplingItem(ModBlocks.BLOODWOOD_SAPLING);
+
+        withExistingParent(ModItems.GECKO_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }
 
     private ItemModelBuilder saplingItem(DeferredBlock<Block> item) {

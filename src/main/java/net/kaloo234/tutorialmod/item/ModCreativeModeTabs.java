@@ -43,7 +43,7 @@ public class ModCreativeModeTabs {
                                 output.accept(ModItems.BLUESTONE_EXCAVATOR);
 
                                 output.accept(ModItems.BLUESTONE_HELMET);
-                                output.accept(ModItems.BLUESTONE_CHEStPLATE);
+                                output.accept(ModItems.BLUESTONE_CHESTPLATE);
                                 output.accept(ModItems.BLUESTONE_LEGGINGS);
                                 output.accept(ModItems.BLUESTONE_BOOTS);
 
@@ -55,6 +55,8 @@ public class ModCreativeModeTabs {
 
                                 output.accept(ModItems.RADISH_SEEDS);
                                 output.accept(ModItems.GOJI_BERRIES);
+
+                                output.accept(ModItems.GECKO_SPAWN_EGG);
                             }).build());
 
     public static final Supplier<CreativeModeTab> BLUESTONE_BLOCKS_TAB =

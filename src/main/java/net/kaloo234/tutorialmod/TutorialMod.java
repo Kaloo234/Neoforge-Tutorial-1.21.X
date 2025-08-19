@@ -5,11 +5,14 @@ import net.kaloo234.tutorialmod.component.ModDataComponent;
 import net.kaloo234.tutorialmod.datagen.DataGenerators;
 import net.kaloo234.tutorialmod.effect.ModEffects;
 import net.kaloo234.tutorialmod.enchantment.ModEnchantmentEffects;
+import net.kaloo234.tutorialmod.entity.ModEntities;
+import net.kaloo234.tutorialmod.entity.client.GeckoRenderer;
 import net.kaloo234.tutorialmod.item.ModCreativeModeTabs;
 import net.kaloo234.tutorialmod.item.ModItems;
 import net.kaloo234.tutorialmod.potion.ModPotions;
 import net.kaloo234.tutorialmod.sound.ModSounds;
 import net.kaloo234.tutorialmod.util.ModItemsProperties;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.loading.FMLEnvironment;
@@ -52,6 +55,7 @@ public class TutorialMod {
         ModEffects.register(modEventBus);
         ModPotions.register(modEventBus);
         ModEnchantmentEffects.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
@@ -82,6 +86,8 @@ public class TutorialMod {
     public static class ClientModEvents {
         public static void onClientSetup(FMLClientSetupEvent event) {
             ModItemsProperties.addCustomItemProperties();
+
+            EntityRenderers.register(ModEntities.GECKO.get(), GeckoRenderer::new);
         }
     }
 }

@@ -1,4 +1,4 @@
-// 1.21.1	2025-08-17T11:11:07.795575	Item Models: tutorialmod
+// 1.21.1	2025-08-17T20:05:08.430804	Item Models: tutorialmod
 f746b64540daf2ab6302b3ec01a78490c48fc10b assets/tutorialmod/models/item/bar_brawl_music_disc.json
 b79acaaf96af5a35ff9360d1cac8e57328a3a926 assets/tutorialmod/models/item/bloodwood_button.json
 86a660262f2d5b488d0ff6694ae81178b79de0f0 assets/tutorialmod/models/item/bloodwood_door.json
@@ -62,6 +62,7 @@ d847ecb0f90de0e4f27dff709e9f19835928c99c assets/tutorialmod/models/item/blueston
 5c1194e170c54aecba01c7edd322a28717a41423 assets/tutorialmod/models/item/bluestone_sword.json
 c5577af5c7144484e14fbe41831c29f310dc7665 assets/tutorialmod/models/item/bluestone_wall.json
 91ec90598690688b7129cd5976415ae5158e72d3 assets/tutorialmod/models/item/frostfire_ice.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/tutorialmod/models/item/gecko_spawn_egg.json
 7a12a2e2ed75ddef6509c66a3099f579af1d8469 assets/tutorialmod/models/item/goji_berries.json
 4af225c495e9b12b3fa44313d73386bd65ddfd20 assets/tutorialmod/models/item/kaloo234_armor_trim_smithing_template.json
 f4c84ba8717deb3f252eef0b2e0833f60e735029 assets/tutorialmod/models/item/radish.json
