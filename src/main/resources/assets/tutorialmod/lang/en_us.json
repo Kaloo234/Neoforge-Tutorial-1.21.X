@@ -35,6 +35,8 @@
 
   "item.tutorialmod.gecko_spawn_egg": "Gecko Spawn Egg",
 
+  "item.tutorialmod.tomahawk": "Tomahawk",
+
   "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
   "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
   "item.minecraft.lingering_potion.effect.slimey_potion": "Slimey Lingering Potion",
@@ -110,5 +112,6 @@
   "painting.tutorialmod.saw_them.title": "Saw Them",
   "painting.tutorialmod.saw_them.author": "NanoAttack",
 
-  "entity.mccourse.gecko": "Gecko"
+  "entity.mccourse.gecko": "Gecko",
+  "entity.mccourse.tomahawk": "Tomahawk"
 }

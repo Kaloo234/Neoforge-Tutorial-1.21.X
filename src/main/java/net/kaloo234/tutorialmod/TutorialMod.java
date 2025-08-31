@@ -7,6 +7,7 @@ import net.kaloo234.tutorialmod.effect.ModEffects;
 import net.kaloo234.tutorialmod.enchantment.ModEnchantmentEffects;
 import net.kaloo234.tutorialmod.entity.ModEntities;
 import net.kaloo234.tutorialmod.entity.client.GeckoRenderer;
+import net.kaloo234.tutorialmod.entity.client.TomahawkProjectileRenderer;
 import net.kaloo234.tutorialmod.item.ModCreativeModeTabs;
 import net.kaloo234.tutorialmod.item.ModItems;
 import net.kaloo234.tutorialmod.potion.ModPotions;
@@ -88,6 +89,7 @@ public class TutorialMod {
             ModItemsProperties.addCustomItemProperties();
 
             EntityRenderers.register(ModEntities.GECKO.get(), GeckoRenderer::new);
+            EntityRenderers.register(ModEntities.TOMAHAWK.get(), TomahawkProjectileRenderer::new);
         }
     }
 }
