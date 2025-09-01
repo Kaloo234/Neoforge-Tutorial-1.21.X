@@ -1,6 +1,7 @@
 package net.kaloo234.tutorialmod.entity;
 
 import net.kaloo234.tutorialmod.TutorialMod;
+import net.kaloo234.tutorialmod.entity.custom.ChairEntity;
 import net.kaloo234.tutorialmod.entity.custom.GeckoEntity;
 import net.kaloo234.tutorialmod.entity.custom.TomahawkProjectileEntity;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -23,6 +24,9 @@ public class ModEntities {
             ENTITY_TYPES.register("tomahawk", () -> EntityType.Builder.<TomahawkProjectileEntity>of(TomahawkProjectileEntity::new, MobCategory.MISC)
                     .sized(0.5f, 1.15f).build("tomahawk"));
 
+    public static final Supplier<EntityType<ChairEntity>> CHAIR_ENTITY =
+            ENTITY_TYPES.register("chair_entity", () -> EntityType.Builder.of(ChairEntity::new, MobCategory.MISC)
+                    .sized(0.5f, 0.5f).build("chai_entity"));
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
