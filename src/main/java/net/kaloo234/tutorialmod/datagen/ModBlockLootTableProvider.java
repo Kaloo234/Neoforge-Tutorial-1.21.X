@@ -78,6 +78,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.STRIPPED_BLOODWOOD_WOOD.get());
         dropSelf(ModBlocks.BLOODWOOD_PLANKS.get());
         dropSelf(ModBlocks.BLOODWOOD_SAPLING.get());
+        dropSelf(ModBlocks.CHAIR.get());
+        dropSelf(ModBlocks.TOTEM.get());
 
         this.add(ModBlocks.BLOODWOOD_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.BLOODWOOD_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));

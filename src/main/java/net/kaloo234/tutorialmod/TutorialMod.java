@@ -89,7 +89,7 @@ public class TutorialMod {
             ModItemsProperties.addCustomItemProperties();
 
             EntityRenderers.register(ModEntities.GECKO.get(), GeckoRenderer::new);
-            EntityRenderers.register(ModEntities.TOMAHAWK.get(), TomahawkProjectileRenderer::new);
+            //EntityRenderers.register(ModEntities.TOMAHAWK.get(), TomahawkProjectileRenderer::new);
         }
     }
 }

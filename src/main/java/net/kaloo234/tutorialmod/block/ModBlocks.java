@@ -160,6 +160,12 @@ public class ModBlocks {
             () -> new TrapDoorBlock(BlockSetType.OAK,
                     BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noCollission()));
 
+    public static final DeferredBlock<Block> CHAIR = registerBlock("chair",
+            () -> new ChairBlock(BlockBehaviour.Properties.of().noOcclusion()));
+
+    public static final DeferredBlock<Block> TOTEM = registerBlock("totem",
+            () -> new TotemBlock(BlockBehaviour.Properties.of().noOcclusion()));
+
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

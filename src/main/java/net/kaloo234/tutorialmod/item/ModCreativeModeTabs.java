@@ -104,6 +104,9 @@ public class ModCreativeModeTabs {
                                 output.accept(ModBlocks.BLOODWOOD_SAPLING);
 
                                 output.accept(ModBlocks.BLUESTONE_LAMP);
+
+                                output.accept(ModBlocks.CHAIR);
+                                output.accept(ModBlocks.TOTEM);
                             }).build());
 
 
